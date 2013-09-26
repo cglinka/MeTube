@@ -11,13 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130926143509) do
+ActiveRecord::Schema.define(version: 20130926161140) do
 
   create_table "videos", force: true do |t|
     t.string   "title"
     t.string   "youtube_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "description"
+    t.integer  "rating"
+    t.string   "uploader_name"
   end
 
 end

@@ -2,6 +2,12 @@
 
 <iframe width="420" height="315" src="//www.youtube.com/embed/<%=@video.youtube_id%>" frameborder="0" allowfullscreen></iframe>
 
-<p><%= link_to 'back', videos_url %></p>
+<p><%= @video.description %></p>
+
+<p>Rating: <%= @video.rating %></p>
+
+<p>Uploader: <a href="#"><%= @video.uploader_name %></a></p>
+
+<p><%= link_to 'Back Home', videos_url %></p>
 
 <p><%= link_to 'first', video_path(@first.id) %>  <%= link_to 'last', video_path(@last.id) %></p>
